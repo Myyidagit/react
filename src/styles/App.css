@@ -1,0 +1,48 @@
+.bottomMuen{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bottomMuen a{
+  height: 50px;
+  width: 30%;
+  text-align: center;
+  line-height: 90px;
+  font-size: 14px;
+  color: #8a8a8a;
+}
+.bottomMuen a{
+  display: inline-block;
+}
+.bottomMuen a:first-child{
+  background: url(../image/homeb.png) no-repeat center 5px;
+  background-size: 30px;
+}
+.bottomMuen a:first-child.home{
+  background: url(../image/home.png) no-repeat center 5px;
+  background-size: 30px;
+  color: #1afa29;
+}
+.bottomMuen a:nth-child(2){
+  background: url(../image/cartb.png) no-repeat center 5px;
+  background-size: 30px;
+}
+.bottomMuen a:nth-child(2).about{
+  background: url(../image/cart.png) no-repeat center 5px;
+  background-size: 30px;
+  color: #1afa29;
+}
+.bottomMuen a:nth-child(3){
+  background: url(../image/centerb.png) no-repeat center 5px;
+  background-size: 30px;
+}
+.bottomMuen a:nth-child(3).main{
+  background: url(../image/center.png) no-repeat center 5px;
+  background-size: 30px;
+  color: #1afa29;
+}
