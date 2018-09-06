@@ -4,6 +4,7 @@
 import React,{ Component} from 'react';
 import './home.css'
 // import axios from 'axios'
+import Header from '../comments/header'
 import {getList} from "../../api/api"
 export default class Home extends Component{
     constructor(props) {
@@ -25,6 +26,7 @@ export default class Home extends Component{
     render(){
         return (
             <div>
+                <Header headerName='首页'></Header>
                 <ul className="leftMenu">
                     {
                         this.state.posts.map((item,index) =>

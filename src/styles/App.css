@@ -2,47 +2,57 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 60px;
+  height: 45px;
   background: #fff;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .bottomMuen a{
-  height: 50px;
+  height: 45px;
   width: 30%;
   text-align: center;
-  line-height: 90px;
-  font-size: 14px;
+  line-height: 64px;
+  font-size: 12px;
+  font-weight: 800;
   color: #8a8a8a;
 }
 .bottomMuen a{
   display: inline-block;
 }
 .bottomMuen a:first-child{
-  background: url(../image/homeb.png) no-repeat center 5px;
-  background-size: 30px;
+  background: url(../assets/homeb.png) no-repeat center 0;
+  background-size: .8rem;
 }
 .bottomMuen a:first-child.home{
-  background: url(../image/home.png) no-repeat center 5px;
-  background-size: 30px;
-  color: #1afa29;
+  background: url(../assets/home.png) no-repeat center 0;
+  background-size: .8rem;
+  color: #2395ff;
 }
 .bottomMuen a:nth-child(2){
-  background: url(../image/cartb.png) no-repeat center 5px;
-  background-size: 30px;
+  background: url(../assets/disc.png) no-repeat center 5px;
+  background-size: .533333rem;
 }
 .bottomMuen a:nth-child(2).about{
-  background: url(../image/cart.png) no-repeat center 5px;
-  background-size: 30px;
-  color: #1afa29;
+  background: url(../assets/discb.png) no-repeat center 5px;
+  background-size:  .533333rem;
+  color: #2395ff;
 }
 .bottomMuen a:nth-child(3){
-  background: url(../image/centerb.png) no-repeat center 5px;
-  background-size: 30px;
+  background: url(../assets/dingb.png) no-repeat center 5px;
+  background-size:  .533333rem;
 }
-.bottomMuen a:nth-child(3).main{
-  background: url(../image/center.png) no-repeat center 5px;
-  background-size: 30px;
-  color: #1afa29;
+.bottomMuen a:nth-child(3).ding{
+  background: url(../assets/ding.png) no-repeat center 5px;
+  background-size:  .533333rem;
+  color: #2395ff;
+}
+.bottomMuen a:nth-child(4){
+  background: url(../assets/mineb.png) no-repeat center 5px;
+  background-size:  .533333rem;
+}
+.bottomMuen a:nth-child(4).main{
+  background: url(../assets/mine.png) no-repeat center 5px;
+  background-size:  .533333rem;
+  color: #2395ff;
 }
