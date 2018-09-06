@@ -28,4 +28,10 @@ export const getList = ()=>{
 }
 export const cityList = ()=>{
     return axios.get(`${url}cityList`).then(res=> res.data)
- }
+}
+export const bannerList = ()=>{
+    return axios.get(`${url}bannerList`).then(res=> res.data)
+}
+export const storeList = ()=>{
+    return axios.get(`${url}storeList`).then(res=> res.data)
+}
