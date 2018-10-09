@@ -67,6 +67,8 @@
 }
 .home_storeList li img{
     float: left;
+    width: 80px;
+    height: 80px;
 }
 .home_storeList li span{
     width: 250px;

@@ -19,6 +19,19 @@ export default class Home extends Component{
     handleClick(){
         console.log(1111)
     }
+    getImgPath(path) {
+        let suffix;
+        if (!path) {
+            return '//elm.cangdu.org/img/default.jpg'
+        }
+        if (path.indexOf('jpeg') !== -1) {
+            suffix = '.jpeg'
+        } else {
+            suffix = '.png'
+        }
+        let url = '/' + path.substr(0, 1) + '/' + path.substr(1, 2) + '/' + path.substr(3) + suffix;
+        return 'https://fuss10.elemecdn.com' + url
+    }
     componentDidMount() {
         bannerList().then(res=>{
             console.log(res)
@@ -48,7 +61,7 @@ export default class Home extends Component{
                     {
                         bannerList.map((item,index)=>
                             <li key={index}>
-                                <img alt='' src='//fuss10.elemecdn.com/0/d0/dd7c960f08cdc756b1d3ad54978fdjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/'/>
+                                <img alt='' src={this.getImgPath(item.image_hash)}/>
                                 <p>{item.name}</p>
                             </li>
                         )
@@ -58,7 +71,7 @@ export default class Home extends Component{
                     {
                         storeListb.map((item,index)=>
                             <li key={index}>
-                                <img alt='' src='//fuss10.elemecdn.com/0/d0/dd7c960f08cdc756b1d3ad54978fdjpeg.jpeg?imageMogr/format/webp/thumbnail/!90x90r/gravity/Center/crop/90x90/'/>
+                                <img alt='' src={this.getImgPath(item.restaurant.image_path)}/>
                                 <span>{item.restaurant.name}</span>
                                 <span>{item.restaurant.address}</span>
                             </li>
